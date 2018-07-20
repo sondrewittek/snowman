@@ -1,0 +1,44 @@
+
+
+.snowman{
+    transform-origin: 50% 90%;
+    animation: wobble 5s infinite;
+}
+
+@keyframes wobble {
+    25% { 
+        transform: rotate(4deg);
+    }
+    75% { 
+        transform: rotate(-4deg);
+    }
+}
+
+.rightArm{
+    transform-origin: 0% 100%;
+    animation: rightWave 3s infinite;
+}
+
+@keyframes rightWave {
+    50% { 
+        transform: rotate(45deg);
+    }
+}
+
+.leftArm{
+    transform-origin: 100% 100%;
+    animation: leftWave 3s infinite;
+}
+
+@keyframes leftWave {
+    50% { 
+        transform: rotate(-45deg);
+    }
+}
+
+.detail {
+    stroke: red; 
+}
+.hat {
+    fill:green;
+}

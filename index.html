@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <link rel=stylesheet href="./styles/colors.css" />
+    <link rel=stylesheet href="./styles/style.css" />
+</head>
+
+<body>
+    <!-- 
+    <div class="color-primary-0" style="width: 200px; height: 200px;"></div>
+    <div class="color-primary-1" style="width: 200px; height: 200px;"></div>
+    <div class="color-primary-2" style="width: 200px; height: 200px;"></div>
+
+    <div class="color-secondary-1-0" style="width: 200px; height: 200px;"></div>
+    <div class="color-secondary-1-1" style="width: 200px; height: 200px;"></div>
+    <div class="color-secondary-1-2" style="width: 200px; height: 200px;"></div>
+
+    <div class="color-secondary-2-0" style="width: 200px; height: 200px;"></div>
+    <div class="color-secondary-2-1" style="width: 200px; height: 200px;"></div>
+    <div class="color-secondary-2-2" style="width: 200px; height: 200px;"></div> 
+    -->
+    <!-- 
+    <svg viewBox="0 0 2500 2600" class="leafIcon">
+        <path id="leaf"
+            fill="green" stroke="black" stroke-width="5"
+            d="M 1004.00,432.00
+            C 1129.80,1035.53 622.00,1082.00 530.00,1004.00
+                536.00,926.00 626.00,782.00 792.00,866.00
+                817.07,854.96 700.00,812.00 650.00,822.00
+                710.00,790.00 834.00,720.00 870.00,632.00
+                847.06,676.06 628.49,810.42 636.00,796.00
+                666.40,762.50 663.32,650.34 660.00,654.00
+                645.11,810.03 533.69,857.96 488.00,956.00
+                404.00,504.00 828.00,586.00 1004.00,428.00M 
+                758.00,462.00M 858.00,756.00">
+            </path>
+
+        
+           
+    </svg> -->
+
+
+    <svg width="100%" height="100%">
+
+        <mask maskUnits="userSpaceOnUse" id="fade">
+            <!-- Here's that slight gradient -->
+            <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="100%">
+                <stop offset="0" style="stop-color: #FFFFFF" />
+                <stop offset="1" style="stop-color: #000000" />
+            </linearGradient>
+            <!-- The canvas for our mask -->
+            <rect fill="url(#gradient)" width="100%" height="100%" />
+        </mask>
+
+        <pattern  viewBox="0 0 100 130" id="snowmanPattern" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+            <g class="snowman">
+                <!-- Head -->
+                <circle class="head" r="17" cx="50" cy="48" stroke="black" stroke-width="0.5" fill="none"></circle>
+                <!-- Hat -->
+                <rect class="hat" y="15" x="37.5" stroke="black" fill="white" stroke-width="1" width="25" height="20"></rect>
+                <line class="hat brim" x1="30" y1="35" x2="70" y2="35" stroke="black" stroke-width="2" />
+                <line class="hat detail" x1="37.5" y1="30" x2="62.5" y2="30" stroke-width="5" />
+                <!-- Eyes  -->
+                <circle class="eye leftEye" r="2" cx="45" cy="45" stroke="black" stroke-width="1" fill="black"></circle>
+                <circle class="eye rightEye" r="2" cx="55" cy="45" stroke="black" stroke-width="1" fill="black"></circle>
+                <!-- Nose -->
+                <circle class="nose" r="1.5" cx="50" cy="51" stroke="orange" stroke-width="1" fill="orange"></circle>
+                <!-- Mouth -->
+                <circle class="mouth" r="0.5" cx="58" cy="55" stroke="black" stroke-width="1" fill="none"></circle>
+                <circle class="mouth" r="0.5" cx="54" cy="55.5" stroke="black" stroke-width="1" fill="none"></circle>
+                <circle class="mouth" r="0.5" cx="50" cy="56" stroke="black" stroke-width="1" fill="none"></circle>
+                <circle class="mouth" r="0.5" cx="46" cy="55.5" stroke="black" stroke-width="1" fill="none"></circle>
+                <circle class="mouth" r="0.5" cx="42" cy="55" stroke="black" stroke-width="1" fill="none"></circle>
+
+                <!-- Arms -->
+                <line class="arm rightArm" x1="73" y1="80" x2="85" y2="75" stroke="black" stroke-width="2" />
+                <line class="arm leftArm" x1="27" y1="80" x2="15" y2="75" stroke="black" stroke-width="2" />
+
+                <!-- Body -->
+                <circle class="body" r="25" cx="50" cy="90" stroke="black" stroke-width="0.5" fill="white"></circle>
+                <!-- Buttons -->
+                <circle class="button" r="0.5" cx="50" cy="75" stroke="black" stroke-width="1" fill="none"></circle>
+                <circle class="button" r="0.5" cx="50" cy="80" stroke="black" stroke-width="1" fill="none"></circle>
+                <circle class="button" r="0.5" cx="50" cy="85" stroke="black" stroke-width="1" fill="none"></circle>
+                <!-- Belt -->
+                <polygon class="belt" points="25,93 75,93 74.5,95 25.5,95" stroke="none" fill="black" stroke-width="1"></polygon>
+                <rect class="buckle" y="92" x="46" stroke="black" fill="white" stroke-width="1" width="8" height="4"></rect>
+
+            </g>
+
+        </pattern>
+
+        <rect x="0" y="0" width="100%" height="100%" fill="url(#snowmanPattern)" />
+
+    </svg>
+
+
+  
+
+</body>
+
+</html>
