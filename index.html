@@ -40,19 +40,9 @@
     </svg> -->
 
 
-    <svg width="100%" height="100%">
+    <svg width="300px" height="300px" viewBox="0 0 100 130"> 
 
-        <mask maskUnits="userSpaceOnUse" id="fade">
-            <!-- Here's that slight gradient -->
-            <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="100%">
-                <stop offset="0" style="stop-color: #FFFFFF" />
-                <stop offset="1" style="stop-color: #000000" />
-            </linearGradient>
-            <!-- The canvas for our mask -->
-            <rect fill="url(#gradient)" width="100%" height="100%" />
-        </mask>
-
-        <pattern  viewBox="0 0 100 130" id="snowmanPattern" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+        <!-- <pattern  viewBox="0 0 100 130" id="snowmanPattern" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse"> -->
             <g class="snowman">
                 <!-- Head -->
                 <circle class="head" r="17" cx="50" cy="48" stroke="black" stroke-width="0.5" fill="none"></circle>
@@ -88,7 +78,7 @@
 
             </g>
 
-        </pattern>
+        <!-- </pattern> -->
 
         <rect x="0" y="0" width="100%" height="100%" fill="url(#snowmanPattern)" />
 
